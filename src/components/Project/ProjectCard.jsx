@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = () => {
   return (
-    <div className=" min-h-screen bg-[#0d141e] py-20">
+    <div className="bg-[#0d141e] py-20">
       <div className="w-8/12 mx-auto">
 
         {/* Heading */}
@@ -197,7 +197,7 @@ const ProjectCard = () => {
             >
               <div className="relative h-[180px]">
                 <Image
-                  src="https://www.hrjohnsonindia.com/assets/images/blog/bathroom-tiles-for-an-aesthetic-and-safe.jpg"
+                  src="https://i.ytimg.com/vi/TrFkfgMZuqc/maxresdefault.jpg"
                   alt="Project"
                   fill
                   className="object-cover"
