@@ -1,7 +1,7 @@
 import { Cascadia_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
-import MotionWrapper from "@/components/Framer-Motion/MotionWrapper";
+import SmoothScroll from "@/components/Lenis/SmoothScroll";
 
 const Cascadia_Code_Font = Cascadia_Code({
   subsets: ["latin"],
@@ -21,15 +21,18 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Navbar />
-        <main
-          className="antialiased"
-          style={{
-            backgroundColor: "#020817",
-            backgroundImage: "radial-gradient(ellipse 100% 40% at 50% 0%, rgba(14,30,70,0.5) 0%, transparent 70%)",
-          }}
-        >
-          <MotionWrapper>{children}</MotionWrapper>
-        </main>
+        <SmoothScroll>
+          <main
+            className="antialiased"
+            style={{
+              backgroundColor: "#020817",
+              backgroundImage:
+                "radial-gradient(ellipse 100% 40% at 50% 0%, rgba(14,30,70,0.5) 0%, transparent 70%)",
+            }}
+          >
+            {children}
+          </main>
+        </SmoothScroll>
       </body>
     </html>
   );
