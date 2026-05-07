@@ -11,8 +11,9 @@ export default function Connect() {
                 {/* Left Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="text-white"
                 >
                     <h2 className="text-4xl font-bold mb-4">
@@ -45,8 +46,9 @@ export default function Connect() {
                 {/* Right Form */}
                 <motion.form
                     initial={{ opacity: 0, x: 40 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="bg-[#0b1221] rounded-xl shadow-lg p-8 space-y-6"
                 >
                     <div>

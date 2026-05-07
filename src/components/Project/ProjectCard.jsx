@@ -22,16 +22,28 @@ const ProjectCard = () => {
           <div className="max-w-4xl">
 
             <div className="relative mb-3">
-              <h2 className="text-white text-4xl lg:text-5xl font-bold tracking-tight">
+              <motion.h2
+                className="text-white text-4xl lg:text-5xl font-bold tracking-tight"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
                 Projects
-              </h2>
+              </motion.h2>
               <div className="h-1.5 w-16 bg-blue-500 mt-2 rounded-full"></div>
             </div>
 
-            <p className="text-slate-400 text-lg leading-relaxed max-w-2xl">
+            <motion.p
+              className="text-slate-400 text-lg leading-relaxed max-w-2xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              viewport={{ once: true }}
+            >
               Here are some of the projects I have worked on, showcasing my skills in
               various technologies and problem domains.
-            </p>
+            </motion.p>
           </div>
         </section>
 
@@ -41,7 +53,9 @@ const ProjectCard = () => {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
@@ -119,7 +133,9 @@ const ProjectCard = () => {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
@@ -197,7 +213,9 @@ const ProjectCard = () => {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
@@ -275,7 +293,9 @@ const ProjectCard = () => {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
@@ -353,7 +373,9 @@ const ProjectCard = () => {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
@@ -431,7 +453,9 @@ const ProjectCard = () => {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5 }}
               className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
@@ -514,16 +538,20 @@ const ProjectCard = () => {
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="
-            group flex items-center gap-2
-            rounded-xl border border-white/10
-            bg-white/5 px-6 py-3
-            text-sm font-medium text-white
-            backdrop-blur-md
-            transition-all duration-300
-            hover:border-white/20
-            hover:bg-white/10
-          "
+                  group flex items-center gap-2
+                  rounded-xl border border-white/10
+                  bg-white/5 px-6 py-3
+                  text-sm font-medium text-white
+                  backdrop-blur-md
+                  transition-all duration-300
+                  hover:border-white/20
+                  hover:bg-white/10
+                "
               >
                 View All Projects
 

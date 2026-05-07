@@ -1,6 +1,7 @@
 import { Cascadia_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import MotionWrapper from "@/components/Framer-Motion/MotionWrapper";
 
 const Cascadia_Code_Font = Cascadia_Code({
   subsets: ["latin"],
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
             backgroundImage: "radial-gradient(ellipse 100% 40% at 50% 0%, rgba(14,30,70,0.5) 0%, transparent 70%)",
           }}
         >
-          {children}
+          <MotionWrapper>{children}</MotionWrapper>
         </main>
       </body>
     </html>
