@@ -17,7 +17,7 @@ export default function TechStack() {
 
   return (
     <section
-      className="text-center w-full px-6 sm:px-10 lg:px-20 pb-52 max-w-[1500px] mx-auto"
+      className="py-16 text-center w-full px-6 sm:px-10 lg:px-20 pb-52 max-w-[1500px] mx-auto"
     >
       <motion.h2
         className="text-4xl font-bold text-white mb-2"
