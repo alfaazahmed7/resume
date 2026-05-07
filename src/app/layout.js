@@ -1,8 +1,8 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Cascadia_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 
-const interFont = Inter({
+const Cascadia_Code_Font = Cascadia_Code({
   subsets: ["latin"],
 });
 
@@ -15,12 +15,16 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-       data-theme="light"
-      className={`${interFont.className} h-full antialiased`}
+      data-theme="dark"
+      className={`${Cascadia_Code_Font.className} h-full antialiased`}
     >
       <body>
         <Navbar />
-        <main>
+        <main style={{
+          backgroundColor: "#020817",
+          backgroundImage: "radial-gradient(ellipse 100% 40% at 50% 0%, rgba(14,30,70,0.5) 0%, transparent 70%)",
+        }}
+          className="text-white antialiased">
           {children}
         </main>
       </body>

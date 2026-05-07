@@ -8,8 +8,8 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = () => {
   return (
-    <div className="bg-[#0d141e] py-20">
-      <div className="w-8/12 mx-auto">
+    <div className="min-h-screen py-20">
+      <div className="w-11/12 md:w-8/12 mx-auto">
 
         {/* Heading */}
         <section className="mb-5">
@@ -37,7 +37,7 @@ const ProjectCard = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -5 }}
-              className="max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
+              className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
               <div className="relative h-[180px]">
                 <Image
@@ -115,7 +115,7 @@ const ProjectCard = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -5 }}
-              className="max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
+              className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
               <div className="relative h-[180px]">
                 <Image
@@ -193,7 +193,7 @@ const ProjectCard = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -5 }}
-              className="max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
+              className="max-w-[350px] md:max-w-[400px] rounded-xl overflow-hidden bg-[#0f172a] border border-slate-700"
             >
               <div className="relative h-[180px]">
                 <Image
