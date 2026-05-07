@@ -30,7 +30,9 @@ export default function AboutPage() {
   const rightInView = useInView(rightRef, { once: true, margin: "-80px" });
 
   return (
-    <section className="w-full px-6 sm:px-10 lg:px-20 pb-52 max-w-[1500px] mx-auto">
+    <section
+    id="about"
+    className="w-full px-6 sm:px-10 lg:px-20 pb-52 max-w-[1500px] mx-auto">
 
       {/* ── Section label ── */}
       <motion.div

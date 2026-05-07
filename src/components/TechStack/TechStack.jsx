@@ -16,7 +16,9 @@ export default function TechStack() {
     ];
 
     return (
-        <section className="text-center w-full px-6 sm:px-10 lg:px-20 pb-52 max-w-[1500px] mx-auto">
+        <section
+            id="skills"
+            className="text-center w-full px-6 sm:px-10 lg:px-20 pb-52 max-w-[1500px] mx-auto">
             <motion.h2
                 className="text-4xl font-bold text-white mb-2"
                 initial={{ opacity: 0, y: -20 }}

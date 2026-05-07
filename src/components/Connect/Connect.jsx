@@ -5,6 +5,7 @@ import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 export default function Connect() {
     return (
         <section
+            id="contact"
             className="w-full px-6 sm:px-10 lg:px-20 pb-20 max-w-[1500px] mx-auto"
         >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">

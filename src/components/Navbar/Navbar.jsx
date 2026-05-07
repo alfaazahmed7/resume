@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/projects" },
-    { label: "Skills", href: "/skills" },
-    { label: "Achievements", href: "/achievements" },
-    { label: "Contact", href: "/contact" },
+    { label: "About", href: "#about" },
+    { label: "Projects", href: "#projects" },
+    { label: "Skills", href: "#skills" },
+    { label: "Achievements", href: "#achievements" },
+    { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
