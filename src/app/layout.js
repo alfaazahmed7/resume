@@ -20,11 +20,13 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Navbar />
-        <main style={{
-          backgroundColor: "#020817",
-          backgroundImage: "radial-gradient(ellipse 100% 40% at 50% 0%, rgba(14,30,70,0.5) 0%, transparent 70%)",
-        }}
-          className="text-white antialiased">
+        <main
+          className="antialiased"
+          style={{
+            backgroundColor: "#020817",
+            backgroundImage: "radial-gradient(ellipse 100% 40% at 50% 0%, rgba(14,30,70,0.5) 0%, transparent 70%)",
+          }}
+        >
           {children}
         </main>
       </body>
